@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2.2
+
+- 安全加固：按公司校验 Admin 下发的 `apiBaseUrl`/`mcpUrl` 域名白名单，防止 Token/密码被指向任意域名；
+- 拒绝非 HTTPS 或白名单外平台的签名配置。
+
 ## 0.2.1
 
 - 改为私有发布（Proprietary / All rights reserved）；

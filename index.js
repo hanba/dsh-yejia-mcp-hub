@@ -123,6 +123,16 @@ export function apply(ctx) {
           if (!verified) throw new Error('Admin 配置签名校验失败')
           const config = JSON.parse(payload.toString('utf8'))
           if (config.companyCode !== company.code) throw new Error('Admin 配置公司不匹配')
+          const allowedHosts = new Set((company.allowedHosts || []).map((host) => host.toLowerCase()))
+          for (const platform of config.platforms || []) {
+            for (const field of ['apiBaseUrl', 'mcpUrl']) {
+              let parsed
+              try { parsed = new URL(platform[field]) } catch { throw new Error(`平台 ${platform.platformCode} 的 ${field} 不是合法 URL`) }
+              if (parsed.protocol !== 'https:' || !allowedHosts.has(parsed.hostname.toLowerCase())) {
+                throw new Error(`平台 ${platform.platformCode} 的 ${field} 不在 ${company.code} 域名白名单`)
+              }
+            }
+          }
           resolve(config)
         } catch (error) {
           reject(error)
