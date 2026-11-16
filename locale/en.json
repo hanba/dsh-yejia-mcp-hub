@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Yejia MCP Hub",
+    "description": "Yejia's multi-platform MCP hub: choose a company in Settings → Yejia MCP, sign in, then enable platforms per session from the MCP sources menu below the composer. Platform MCP endpoints are signed by each company's independent Admin; disabled platforms expose no tools to the current session."
+  }
+}

@@ -1,0 +1,4 @@
+- insert:
+    - id: shopee-mcp
+      name: 'dsh-yejia-mcp-hub'
+      config: {}

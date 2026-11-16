@@ -1,0 +1,44 @@
+{
+  "name": "dsh-yejia-mcp-hub",
+  "version": "0.2.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "companies.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "README.md",
+    "PRIVATE_RELEASE.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "description": "Yejia 出品的多平台 MCP 平台中心：从独立 MCP Admin 拉取签名配置，动态接入多个平台，并按会话选择数据源。",
+  "keywords": [
+    "dsh",
+    "mcp",
+    "mcp-hub",
+    "multi-platform",
+    "shopee",
+    "yejia"
+  ],
+  "author": "Yejia",
+  "license": "SEE LICENSE IN LICENSE"
+}
