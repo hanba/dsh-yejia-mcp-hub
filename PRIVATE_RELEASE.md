@@ -1,10 +1,10 @@
-# 私有发布说明
+# 发布说明
 
-本插件是 **Yejia 私有软件**，不进入 dshmarket / awesome-dsh-plugin 公开市场，不提交 PR。
+插件仓库公开，Admin 后端是独立的 **私有仓库**。本插件不进入 dshmarket / awesome-dsh-plugin 公开市场，不提交 PR。
 
 ## 发布方式
 
-1. GitHub **私有仓库**（仓库名建议 `dsh-yejia-mcp-hub`）；
+1. GitHub **公开插件仓库** `dsh-yejia-mcp-hub`；
 2. 推送 tag，例如 `v0.2.1`；
 3. 在 GitHub Release 挂载：
 
@@ -12,25 +12,19 @@
 dsh-yejia-mcp-hub-0.2.1.tgz
 ```
 
-4. 只邀请需要使用的人加入仓库（Read 权限）。
+4. 任何人都可以从公开 Release 下载；Admin 仓库仍然私有。
 
 ## 安装
 
-有仓库权限的机器：
-
-```bash
-git clone git@github.com:你的组织/dsh-yejia-mcp-hub.git /path/dsh-yejia-mcp-hub
-```
-
-然后：
+直接使用公开 Release 的 tgz：
 
 ```text
 plugin_manager install_bundle
-target: /path/dsh-yejia-mcp-hub
+target: /path/dsh-yejia-mcp-hub-0.2.2.tgz
 enabled: true
 ```
 
-或者下载 release 资产后：
+也可以从 GitHub Release 下载后指向 tgz。
 
 ```text
 plugin_manager install_bundle
@@ -42,10 +36,10 @@ GitHub 私有 Release 的下载 URL 需要仓库权限，不能匿名 curl；推
 
 ## 谁能看到
 
-- 只有被邀请进私有仓库的人能看到代码和 Release；
+- 插件源码和 Release 公开；
+- Admin 源码/生产配置在私有仓库，不在这里；
 - 不在 dshmarket 搜索、不在公开索引；
-- 不要提交到 awesome-dsh-plugin；
-- 分享时给对方仓库邀请或可访问的 tgz，不是公开链接。
+- 不要提交到 awesome-dsh-plugin。
 
 ## 更新
 

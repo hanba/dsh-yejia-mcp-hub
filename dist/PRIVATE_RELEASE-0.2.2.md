@@ -1,9 +1,9 @@
-# Yejia MCP Hub v0.2.2（私有发布）
+# Yejia MCP Hub v0.2.2（公开插件 / 私有 Admin）
 
 - 包：`dsh-yejia-mcp-hub-0.2.2.tgz`
 - SHA-256：`115259967998184314d363d98092a3785ac87e2898b85f07ec958ae76fb02f67`
 - 许可证：Proprietary / All rights reserved
-- 分发：私有 GitHub 仓库 Release；不进入 dshmarket / 不提交公开 PR
+- 分发：公开插件仓库 Release；Admin 源码在私有仓库；不进入 dshmarket / 不提交公开 PR
 
 ## 发布步骤
 
@@ -32,4 +32,4 @@ enabled: true
 
 ## 访问范围
 
-只有被邀请进私有仓库的人可见；分享时邀请 GitHub 用户，或给可访问的 tgz。
+插件 Release 公开；Admin 源码/生产配置在私有仓库，只有受邀成员可见。

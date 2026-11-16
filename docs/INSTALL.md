@@ -1,11 +1,11 @@
 # 安装与升级
 
-## 私有 Release 安装
+## GitHub Release 安装
 
-本插件不进公开市场。让有私有仓库权限的同事：
+插件仓库公开，Admin 后端私有。直接使用 Release：
 
-1. clone 仓库到本地；
-2. `plugin_manager install_bundle` 指向目录或 release tgz；
+1. 从公开 Release 下载 tgz；
+2. `plugin_manager install_bundle` 指向 tgz；
 3. 启用并刷新页面。
 
 - 设置 → **Yejia MCP**

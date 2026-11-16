@@ -14,7 +14,7 @@ Yejia 出品的多平台 MCP 平台中心。一个插件接入多个平台，MCP
 
 ## 安装
 
-本插件为 **私有发布**，不进入公开市场。通过私有 GitHub 仓库或 tgz 安装：
+插件仓库公开；Admin 后端是独立私有仓库。通过 GitHub Release 或 tgz 安装：
 
 ```text
 plugin_manager install_bundle
@@ -24,7 +24,7 @@ enabled: true
 
 安装前建议禁用/移除旧的单公司插件（`dsh-shopeemcp-yj`、`dsh-shopeemcp-amb`），避免同名 MCP Server 冲突。
 
-私有发布与许可证见 [PRIVATE_RELEASE.md](PRIVATE_RELEASE.md) 和 [LICENSE](LICENSE)。
+发布与许可证见 [PRIVATE_RELEASE.md](PRIVATE_RELEASE.md) 和 [LICENSE](LICENSE)。
 
 ## 首次使用
 
